@@ -26,7 +26,7 @@
         <LeftSidebar />
         <!--End LeftSidebar-->
         <!--LeftSidebarMob-->
-        <LeftSidebarMob  />
+        <LeftSidebarMob />
         <!--End LeftSidebarMob-->
         <!--Bids-->
         <Bids v-bind:class="activeBlockBids" />
@@ -95,6 +95,7 @@ import Chat from '@/components/app/Chat'
 import Header from '@/components/app/Header'
 import LeftSidebarMob from '@/components/app/LeftSidebarMob'
 import LeftSidebar from '@/components/app/LeftSidebar'
+import MakBetHeader from '@/components/app/MakBetHeader'
 
 export default {
   name: 'home-layout',
@@ -114,6 +115,7 @@ export default {
     Header,
     LeftSidebarMob,
     LeftSidebar,
+    MakBetHeader,
     PerfectScrollbar
   },
   computed: {

@@ -7,8 +7,9 @@
 </template>
 
 <script>
-import HomeLayout from '@/layouts/HomeLayout'
+
 import EmptyLayout from '@/layouts/EmptyLayout'
+import HomeLayout from '@/layouts/HomeLayout'
 export default {
   computed: {
     layout () {
@@ -16,13 +17,13 @@ export default {
     }
   },
   components: {
-    HomeLayout,
-    EmptyLayout
+    EmptyLayout,
+    HomeLayout
   }
 }
 </script>
 
 <style lang="sass">
-@import "assets/app.css"
 @import "assets/fontello.css"
+@import "assets/app.css"
 </style>

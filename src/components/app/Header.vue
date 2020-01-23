@@ -2,7 +2,7 @@
   <header class="header" id="header">
     <div class="header-content df align-items-center justify-content-between">
       <div class="header-content__logo">
-        <img src="src/img/Header/Logo.svg" alt />
+        <img src="img/Header/Logo.svg" alt />
       </div>
       <nav class="header-content__nav">
         <router-link
@@ -21,23 +21,23 @@
         <div class="header-content__course__currency df">
           <div class="header-content__course__currency__block df align-items-center">
             <p>btc: 10,320.72</p>
-            <img src="src/img/Header/arrowTop.svg" alt />
+            <img src="img/Header/arrowTop.svg" alt />
           </div>
           <div class="header-content__course__currency__block df align-items-center">
             <p>eth: 194.00</p>
-            <img src="src/img/Header/arrowBottom.svg" alt />
+            <img src="img/Header/arrowBottom.svg" alt />
           </div>
           <div class="header-content__course__currency__block df align-items-center">
             <p>XRP: 0.26085</p>
-            <img src="src/img/Header/arrowTop.svg" alt />
+            <img src="img/Header/arrowTop.svg" alt />
           </div>
           <div class="header-content__course__currency__block df align-items-center">
             <p>LTC: 70.41</p>
-            <img src="src/img/Header/arrowTop.svg" alt />
+            <img src="img/Header/arrowTop.svg" alt />
           </div>
           <div class="header-content__course__currency__block df align-items-center">
             <p>bth: 302.30</p>
-            <img src="src/img/Header/arrowBottom.svg" alt />
+            <img src="img/Header/arrowBottom.svg" alt />
           </div>
           <div class="header-content__course__currency__block df align-items-center">
             <p>ada: 20.50,9</p>
@@ -54,13 +54,13 @@
         </div>
         <div class="header-content__user-img">
           <p>
-            <img src="src/img/raffle/three.svg" alt />
+            <img src="img/raffle/three.svg" alt />
           </p>
         </div>
       </div>
       <div class="header-content__button df">
-        <button class="header-regist">Регистрация</button>
-        <button>Вход</button>
+        <button class="header-regist" @click.prevent="regist">Регистрация</button>
+        <button @click.prevent="logout">Вход</button>
       </div>
       <!--User,entrance-->
     </div>
@@ -85,7 +85,7 @@
           </svg>
         </div>
         <div class="header-content__logo">
-          <img src="src/img/Header/Logo.svg" alt />
+          <img src="img/Header/Logo.svg" alt />
         </div>
         <nav class="header-content__nav">
           <router-link
@@ -104,13 +104,13 @@
           </div>
           <div class="header-content__user-img">
             <p>
-              <img src="src/img/raffle/three.svg" alt />
+              <img src="img/raffle/three.svg" alt />
             </p>
           </div>
         </div>
         <div class="header-content__button">
-          <button class="header-regist">Регистрация</button>
-          <button>Вход</button>
+          <button class="header-regist" @click.prevent="regist">Регистрация</button>
+          <button @click.prevent="logout">Вход</button>
         </div>
         <!--User,entrance-->
         <div class="burger-menu" v-bind:class="{menuMobActive: menuMob}">
@@ -131,23 +131,23 @@
             <div class="header-content__course__currency df">
               <div class="header-content__course__currency__block df align-items-center">
                 <p>btc: 10,320.72</p>
-                <img src="src/img/Header/arrowTop.svg" alt />
+                <img src="img/Header/arrowTop.svg" alt />
               </div>
               <div class="header-content__course__currency__block df align-items-center">
                 <p>eth: 194.00</p>
-                <img src="src/img/Header/arrowBottom.svg" alt />
+                <img src="img/Header/arrowBottom.svg" alt />
               </div>
               <div class="header-content__course__currency__block df align-items-center">
                 <p>XRP: 0.26085</p>
-                <img src="src/img/Header/arrowTop.svg" alt />
+                <img src="img/Header/arrowTop.svg" alt />
               </div>
               <div class="header-content__course__currency__block df align-items-center">
                 <p>LTC: 70.41</p>
-                <img src="src/img/Header/arrowTop.svg" alt />
+                <img src="img/Header/arrowTop.svg" alt />
               </div>
               <div class="header-content__course__currency__block df align-items-center">
                 <p>bth: 302.30</p>
-                <img src="src/img/Header/arrowBottom.svg" alt />
+                <img src="img/Header/arrowBottom.svg" alt />
               </div>
               <div class="header-content__course__currency__block df align-items-center">
                 <p>ada: 20.50,9</p>
@@ -173,8 +173,13 @@ export default {
     ]
   }),
   methods: {
-    showModal: function () {
-      alert('click')
+    regist () {
+      this.$router.push('/Registration')
+    },
+    showModal: function () {},
+    async logout () {
+      await this.$store.dispatch('logout')
+      this.$router.push('/Login')
     }
   }
 }

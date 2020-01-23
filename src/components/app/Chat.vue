@@ -3,7 +3,7 @@
     <div class="chat-header df justify-content-between align-items-center">
       <div class="chat-header__block df align-items-center">
         <div class="chat-header__block__img">
-          <img src="src/img/chat/Chat.svg" alt />
+          <img src="img/chat/Chat.svg" alt />
         </div>
         <div class="chat-header__block__text">
           <p>чат</p>
@@ -21,7 +21,7 @@
         <div class="chat-content__box">
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-one.svg" alt />
+              <img src="img/chat/photo/photo-one.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -36,7 +36,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-one.svg" alt />
+              <img src="img/chat/photo/photo-one.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -51,7 +51,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-one.svg" alt />
+              <img src="img/chat/photo/photo-one.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -66,7 +66,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-two.svg" alt />
+              <img src="img/chat/photo/photo-two.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -81,7 +81,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-three.svg" alt />
+              <img src="img/chat/photo/photo-three.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -104,7 +104,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-four.svg" alt />
+              <img src="img/chat/photo/photo-four.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -119,7 +119,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-five.svg" alt />
+              <img src="img/chat/photo/photo-five.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -134,7 +134,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-six.svg" alt />
+              <img src="img/chat/photo/photo-six.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -149,7 +149,7 @@
           </div>
           <div class="chat-content__block df align-items-end flex-direction-row-reverse you">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-seven.svg" alt />
+              <img src="img/chat/photo/photo-seven.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -164,7 +164,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-eight.svg" alt />
+              <img src="img/chat/photo/photo-eight.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -179,7 +179,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-nine.svg" alt />
+              <img src="img/chat/photo/photo-nine.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -194,7 +194,7 @@
           </div>
           <div class="chat-content__block df align-items-end">
             <div class="chat-content__block__foto">
-              <img src="src/img/chat/photo/photo-ten.svg" alt />
+              <img src="img/chat/photo/photo-ten.svg" alt />
             </div>
             <div class="block__foto__box">
               <div class="block__foto__box__content">
@@ -213,7 +213,7 @@
         <form class="df form align-items-center justify-content-center" action>
           <input type="text" placeholder=" Написать сообщение..." />
           <button>
-            <img src="src/img/chat/Send.svg" alt />
+            <img src="img/chat/Send.svg" alt />
           </button>
         </form>
       </div>

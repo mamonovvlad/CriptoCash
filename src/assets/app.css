@@ -519,7 +519,7 @@ body .ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__ra
   right: 0;
   top: 116px;
   bottom: 0px;
-  z-index: 10;
+  z-index: 20;
   -webkit-transition: 900ms ease;
   transition: 900ms ease;
 }

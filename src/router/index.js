@@ -21,7 +21,7 @@ const routes = [{
 },
 {
   path: '/registration',
-  name: 'login',
+  name: 'registration',
   meta: {
     layout: 'empty'
   },
