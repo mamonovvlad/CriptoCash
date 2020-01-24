@@ -57,6 +57,7 @@
                 <div class="game-histoty df align-items-center">
                   <img src="src/img/games/left.svg" alt />
                   <p>История игр</p>
+
                 </div>
                 <div class="burger-games"></div>
               </div>
