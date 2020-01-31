@@ -163,6 +163,10 @@ button {
   flex-direction: row-reverse;
 }
 
+.activeUser {
+  display: flex;
+}
+
 /*End helpers*/
 #header .active {
   color: #FF7E00;
@@ -183,10 +187,13 @@ body.ps .ps__rail-y.ps--clicking {
   opacity: 1;
 }
 
-body .ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__rail-y.ps--clicking .ps__thumb-y {
+body .ps__rail-y:hover>.ps__thumb-y,
+.ps__rail-y:focus>.ps__thumb-y,
+.ps__rail-y.ps--clicking .ps__thumb-y {
   background-color: #FF7E00;
   width: 6px;
 }
+
 /*Background color*/
 .main-background {
   background: black url(../../public/img/fon/BG.svg) center no-repeat;
@@ -1396,9 +1403,25 @@ body .ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__ra
   padding: 50px 10px;
 }
 
-.timer .timer-animate {
+.animate-dashed {
   border: 2px dashed rgba(255, 126, 0, 0.7);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   border-radius: 50%;
+  animation: timer 10s linear infinite;
+
+}
+
+@keyframes timer {
+  from {
+    transform: rotate(-360deg);
+  }
+}
+
+.timer .timer-animate {
   position: relative;
   z-index: 3;
   position: relative;
@@ -1406,7 +1429,8 @@ body .ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__ra
 
 .timer .timer-number {
   margin: 25px;
-  padding: 100px 90px 110px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   border: 1px solid rgba(255, 126, 0, 0.15);
   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 126, 0, 0.2) 0%, rgba(255, 126, 0, 0.1506) 40.77%, rgba(255, 126, 0, 0) 100%);
@@ -1740,7 +1764,6 @@ body .ps__rail-y:hover > .ps__thumb-y, .ps__rail-y:focus > .ps__thumb-y, .ps__ra
 
   .timer .timer-number {
     margin: 20px;
-    padding: 90px 80px 100px;
   }
 
   .header-content-mobile .header-content__nav {

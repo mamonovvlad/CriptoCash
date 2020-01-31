@@ -48,7 +48,7 @@
         </div>
       </div>
       <!--User,entrance-->
-      <div class="dn header-content__user df align-items-center">
+      <div class="dn header-content__user df align-items-center" v-bind:class="activeUserBlock">
         <div class="header-content__user-title">
           <p>Максим Бочков</p>
         </div>
@@ -60,7 +60,7 @@
       </div>
       <div class="header-content__button df">
         <button class="header-regist" @click.prevent="regist">Регистрация</button>
-        <button @click.prevent="logout">Вход</button>
+        <button @click.prevent="logout" v-on:click="activeUser = true">Вход</button>
       </div>
       <!--User,entrance-->
     </div>
@@ -98,7 +98,7 @@
           >{{ link.title }}</router-link>
         </nav>
         <!--User,entrance-->
-        <div class="dn header-content__user df align-items-center">
+        <div class="dn header-content__user df align-items-center" v-bind:class="activeUserBlock">
           <div class="header-content__user-title">
             <p>Максим Бочков</p>
           </div>
@@ -110,7 +110,7 @@
         </div>
         <div class="header-content__button">
           <button class="header-regist" @click.prevent="regist">Регистрация</button>
-          <button @click.prevent="logout">Вход</button>
+          <button @click.prevent="logout" @:click="activeUser = true">Вход</button>
         </div>
         <!--User,entrance-->
         <div class="burger-menu" v-bind:class="{menuMobActive: menuMob}">
@@ -166,6 +166,7 @@
 <script>
 export default {
   data: () => ({
+    activeUser: false,
     menuMob: false,
     links: [
       { title: 'Главная', url: '/', exact: true },
@@ -180,6 +181,13 @@ export default {
     async logout () {
       await this.$store.dispatch('logout')
       this.$router.push('/Login')
+    }
+  },
+  computed: {
+    activeUserBlock: function () {
+      return {
+        activeUser: this.activeUser
+      }
     }
   }
 }

@@ -7,7 +7,6 @@
 </template>
 
 <script>
-
 import EmptyLayout from '@/layouts/EmptyLayout'
 import HomeLayout from '@/layouts/HomeLayout'
 export default {

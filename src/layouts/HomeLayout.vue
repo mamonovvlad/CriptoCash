@@ -57,7 +57,6 @@
                 <div class="game-histoty df align-items-center">
                   <img src="src/img/games/left.svg" alt />
                   <p>История игр</p>
-
                 </div>
                 <div class="burger-games"></div>
               </div>
@@ -97,7 +96,6 @@ import Header from '@/components/app/Header'
 import LeftSidebarMob from '@/components/app/LeftSidebarMob'
 import LeftSidebar from '@/components/app/LeftSidebar'
 import MakBetHeader from '@/components/app/MakBetHeader'
-
 export default {
   name: 'home-layout',
   data: function () {
