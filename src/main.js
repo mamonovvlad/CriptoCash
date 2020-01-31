@@ -6,6 +6,7 @@ import router from './router'
 import store from './store'
 import PerfectScrollbar from 'vue2-perfect-scrollbar'
 import 'vue2-perfect-scrollbar/dist/vue2-perfect-scrollbar.css'
+import VueMeta from 'vue-meta'
 
 import firebase from 'firebase/app'
 import 'firebase/auth'
@@ -14,6 +15,7 @@ import 'firebase/database'
 Vue.config.productionTip = false
 Vue.use(PerfectScrollbar)
 Vue.use(Vuelidate)
+Vue.use(VueMeta)
 
 firebase.initializeApp({
   apiKey: 'AIzaSyA6ji8J9Pb39FnRdWePqQEEqzmBBS2CKcA',
