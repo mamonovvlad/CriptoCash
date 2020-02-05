@@ -1399,7 +1399,6 @@ body .ps__rail-y:hover>.ps__thumb-y,
 
 .timer {
   width: 100%;
-  height: 100%;
   padding: 50px 10px;
 }
 
@@ -1737,6 +1736,7 @@ body .ps__rail-y:hover>.ps__thumb-y,
 }
 
 @media screen and (max-width: 1200px) {
+
   .burger-menu__nav {
     text-align: center;
     margin-bottom: 10px;
@@ -1784,6 +1784,10 @@ body .ps__rail-y:hover>.ps__thumb-y,
 
   .raffle {
     max-width: 600px;
+  }
+
+  .burger-menu .mob-content__nav {
+    display: none;
   }
 }
 
@@ -1942,7 +1946,7 @@ body .ps__rail-y:hover>.ps__thumb-y,
   }
 
   .popup-content {
-    padding: 30px 10px 30px;
+    padding: 50px 40px 50px;
   }
 
   .promotionalc-codes__list {
@@ -2019,6 +2023,16 @@ body .ps__rail-y:hover>.ps__thumb-y,
 }
 
 @media screen and (max-width: 425px) {
+  .header-content__button {
+    display: flex;
+  }
+
+  .header-content__button button,
+  .header-content__button .header-regist {
+    font-size: 1.2rem;
+    padding: 8px 18px;
+  }
+
   .raffle {
     padding: 30px 0px 30px;
     max-width: 270px;

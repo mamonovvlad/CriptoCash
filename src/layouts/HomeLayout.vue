@@ -65,12 +65,6 @@
           <div class="games-box df justify-content-between">
             <!--makeBet-->
             <div class="makeBet df flex-direction-column">
-              <!--MakBetHeader-->
-              <MakBetHeader />
-              <!--End MakBetHeader-->
-              <!--Bank-->
-              <Bank />
-              <!--End Bank-->
               <router-view />
             </div>
             <!--End makeBet-->
@@ -89,13 +83,12 @@
 
 <script>
 import { PerfectScrollbar } from 'vue2-perfect-scrollbar'
-import Bank from '@/components/app/Bank'
 import Bids from '@/components/app/Bids'
 import Chat from '@/components/app/Chat'
 import Header from '@/components/app/Header'
 import LeftSidebarMob from '@/components/app/LeftSidebarMob'
 import LeftSidebar from '@/components/app/LeftSidebar'
-import MakBetHeader from '@/components/app/MakBetHeader'
+
 export default {
   name: 'home-layout',
   data: function () {
@@ -108,13 +101,11 @@ export default {
     }
   },
   components: {
-    Bank,
     Bids,
     Chat,
     Header,
     LeftSidebarMob,
     LeftSidebar,
-    MakBetHeader,
     PerfectScrollbar
   },
   computed: {
